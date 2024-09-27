@@ -17,6 +17,6 @@
       }
     ],
     "environment": {
-      "NODE_VERSION": "18.x" // Hoặc phiên bản bạn cần
+      "NODE_VERSION": "18.x"
     }
   }
