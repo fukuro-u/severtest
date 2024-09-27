@@ -1,0 +1,4 @@
+[build]
+nodeVersion = "8.x"
+[ignore]
+files = ["node_modules", "public", "vendor", "*.log", "*.bak", "*.bk", ".env*", "web.config*"]

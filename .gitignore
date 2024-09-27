@@ -1,0 +1,8 @@
+node_modules/
+public/
+vendor/
+*.log
+*.bak
+*.ba
+.env*
+web.config*
