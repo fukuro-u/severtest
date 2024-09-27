@@ -1,20 +1,22 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "**/*",
-      "use": "@vercel/static",
-      "config": {
-        "output": "build"
-      },
-      "runtime": "nodejs18.x"
+ {
+    "version": 2,
+    "builds": [
+      {
+        "src": "**/*",
+        "use": "@vercel/static",
+        "config": {
+          "output": "build"
+        }
+      }
+    ],
+    "framework": "vercel",
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "build/server.js" 
+      }
+    ],
+    "environment": {
+      "NODE_VERSION": "18.x" // Hoặc phiên bản bạn cần
     }
-  ],
-  "framework": "vercel",
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "build/server.js" 
-    }
-  ]
-}
+  }
