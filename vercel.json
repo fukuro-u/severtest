@@ -1,0 +1,10 @@
+{
+  "installCommand": "npm install"
+  "framework": null,
+  "rewrites": [
+    {
+      "src": "/(.*)",
+      "destination": "server.js" 
+    }
+  ]
+}
