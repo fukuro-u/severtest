@@ -28,6 +28,7 @@ module.exports = function(client){
 	var active2 = new Promise((a, b)=>{
 		BauCua_temp.findOne({}, {}, function(err, temp){
 			Promise.all(dataMeRed.map(function(tab, i){
+				if(!temp)return false;
 				return (LinhVat[i] = temp[i]);
 			}))
 			.then(Results => {
